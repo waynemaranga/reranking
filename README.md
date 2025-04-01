@@ -50,25 +50,25 @@ What makes this an effective reranking query:
 
 ### Prerequisites
 
-- Python 3.7+
-- Cohere API key (or substitute with your preferred provider)
+- Python 3.11+
+- Cohere API key <https://dashboard.cohere.com/>
 
 ### Installation
 
 1. Clone this repository
 2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
    ```
-   pip install cohere python-dotenv
-   ```
-3. Create a `.env` file in the root directory with your API key:
-   ```
+3. Create a `.env` from the `.env.example` with the API key from <https://dashboard.cohere.com/api-keys>
+   ```bash
    COHERE_API_KEY=your_api_key_here
    ```
 
 ### Usage
 
 Run the script:
-```
+```bash
 python rerankers.py
 ```
 
